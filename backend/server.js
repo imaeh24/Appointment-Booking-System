@@ -5,7 +5,6 @@ const mongoose = require('mongoose'); //loads mongoose
 const cors = require('cors'); //loads cors
 require('dotenv').config(); //reads the env file
 
-
 //Basic Configs
 
 const app = express(); //Creates express server application
@@ -61,4 +60,3 @@ app.post('/book', (req, res) => { //starts when the frontend gives booking data 
 app.listen(PORT, () => { //server starts on selected port
     console.log(`Server running on port ${PORT}`); //confirmation that server is up and running
 });
-
